@@ -80,7 +80,7 @@ namespace KChangeLogger
         {
             if (ProjectsGV.SelectedRows.Count <= 0 || ProjectsGV.SelectedRows.Count > 1)
             {
-                MessageBox.Show("One row must be selected for delete.");
+                MessageBox.Show("One row must be selected for delete.", "KChange: Error");
                 return;
             }
 
@@ -95,14 +95,14 @@ namespace KChangeLogger
             Project projectToDel = Data.GetProject(projectName);
             if (projectToDel == null)
             {
-                MessageBox.Show("There was a problem deleting this Project.", "Error");
+                MessageBox.Show("There was a problem deleting this Project.", "KChange: Error");
                 return;
             }
 
             if (Data.RemoveProject(projectToDel))
-                MessageBox.Show("Project removed successfully.", "Success");
+                MessageBox.Show("Project removed successfully.", "KChange: Success");
             else
-                MessageBox.Show("Project removed failed.", "Error");
+                MessageBox.Show("Project removed failed.", "KChange: Error");
 
             RefreshGridView();
 

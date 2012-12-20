@@ -55,7 +55,7 @@ namespace KChangeLogger.Admin
             }
             else
             {
-                MessageBox.Show("Language adding failed!", "KChange: Failure");
+                MessageBox.Show("Language adding failed!", "KChange: Error");
             }
 
             #endregion

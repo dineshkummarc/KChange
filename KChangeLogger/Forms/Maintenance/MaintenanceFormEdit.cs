@@ -51,19 +51,19 @@ namespace KChangeLogger
         {
             if (tbProjectName.Text.Length < 3)
             {
-                MessageBox.Show("Project Name should at least be 3 characters long.", "Error");
+                MessageBox.Show("Project Name should at least be 3 characters long.", "KChange: Error");
                 return;
             }
 
             if (tbProjectPath.Text.Length < 3)
             {
-                MessageBox.Show("Project Path should at least be 3 characters long", "Error");
+                MessageBox.Show("Project Path should at least be 3 characters long", "KChange: Error");
                 return;
             }
 
             if (tbProjectDescription.Text.Length < 3)
             {
-                MessageBox.Show("Project Description should at least be 3 characters long", "Error");
+                MessageBox.Show("Project Description should at least be 3 characters long", "KChange: Error");
                 return;
             }
 

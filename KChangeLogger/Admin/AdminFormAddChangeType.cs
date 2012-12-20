@@ -46,7 +46,7 @@ namespace KChangeLogger.Admin
             if (Data.InsertChangeType(newCT))
                 MessageBox.Show("Change Type added!", "KChange: Success");
             else
-                MessageBox.Show("Change Type adding failure!", "KChange: Failure");
+                MessageBox.Show("Change Type adding failure!", "KChange: Error");
 
             #endregion
 

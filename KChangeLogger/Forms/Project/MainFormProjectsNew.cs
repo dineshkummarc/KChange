@@ -44,25 +44,25 @@ namespace KChangeLogger
             #region Validation
             if (tbProjectName.Text.Length < 3)
             {
-                MessageBox.Show("Project Name must be at least 3 characters long.", "Error");
+                MessageBox.Show("Project Name must be at least 3 characters long.", "KChange: Error");
                 return;
             }
 
             if (tbProjectDescription.Text.Length < 3)
             {
-                MessageBox.Show("Project Description must be at least 3 characters long", "Error");
+                MessageBox.Show("Project Description must be at least 3 characters long", "KChange: Error");
                 return;
             }
 
             if (Data.GetLanguage((string)liLanguage.SelectedValue) == null)
             {
-                MessageBox.Show("You must select which programming language is used for the project.", "Error");
+                MessageBox.Show("You must select which programming language is used for the project.", "KChange: Error");
                 return;
             }
 
             if (tbProjectPath.Text.Length < 3)
             {
-                MessageBox.Show("Project Path must be at least 3 characters long.", "Error");
+                MessageBox.Show("Project Path must be at least 3 characters long.", "KChange: Error");
                 return;
             }
             #endregion

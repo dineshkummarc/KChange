@@ -53,7 +53,7 @@ namespace KChangeLogger
             #region Validation
             if (!ValidateChangeInput().Equals("OK"))
             {
-                MessageBox.Show(ValidateChangeInput(), "Incorrect input");
+                MessageBox.Show(ValidateChangeInput(), "KChange: Incorrect input");
                 return;
             }
             #endregion
