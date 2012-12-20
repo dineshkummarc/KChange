@@ -1,0 +1,209 @@
+.TH "KChangeLogger.MainFormProjectsInfo" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MainFormProjectsInfo \- 
+.PP
+A pop-up containing all information regarding the selected \fBProject\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainFormProjectsInfo\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIInitializes the form and calls BindData \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBCancelled\fP = false"
+.br
+.RI "\fIPublic value indicating whether the form was Cancelled out\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBMainFormProjectsInfo_Load\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBBindData\fP ()"
+.br
+.RI "\fIBinds the Label Controls of the form with myProject Data\&. \fP"
+.ti -1c
+.RI "void \fBbuttonOK_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fICloses the form \fP"
+.ti -1c
+.RI "void \fBbuttonCancel_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fICloses the form, setting the Cancelled value to true \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fI\fBProject\fP Entity whose data is displayed \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectNameLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectDescriptionLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel3\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectPathLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel4\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectCreatedLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel5\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectLastChangedLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel7\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectNumberOfFilesLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbuttonOK\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbuttonCancel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A pop-up containing all information regarding the selected \fBProject\fP\&. 
+
+
+.PP
+Definition at line 15 of file MainFormProjectsInfo\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MainFormProjectsInfo\&.MainFormProjectsInfo (\fBProject\fPtheProject)"
+
+.PP
+Initializes the form and calls BindData \fBParameters:\fP
+.RS 4
+\fItheProject\fP 
+.RE
+.PP
+
+.PP
+Definition at line 29 of file MainFormProjectsInfo\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MainFormProjectsInfo\&.BindData ()\fC [private]\fP"
+
+.PP
+Binds the Label Controls of the form with myProject Data\&. 
+.PP
+Definition at line 43 of file MainFormProjectsInfo\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsInfo\&.buttonCancel_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Closes the form, setting the Cancelled value to true \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file MainFormProjectsInfo\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsInfo\&.buttonOK_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Closes the form \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file MainFormProjectsInfo\&.cs\&.
+.SS "override void KChangeLogger\&.MainFormProjectsInfo\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MainFormProjectsInfo\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsInfo\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MainFormProjectsInfo\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool KChangeLogger\&.MainFormProjectsInfo\&.Cancelled = false"
+
+.PP
+Public value indicating whether the form was Cancelled out\&. 
+.PP
+Definition at line 20 of file MainFormProjectsInfo\&.cs\&.
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MainFormProjectsInfo\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MainFormProjectsInfo\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MainFormProjectsInfo\&.myProject\fC [private]\fP"
+
+.PP
+\fBProject\fP Entity whose data is displayed 
+.PP
+Definition at line 24 of file MainFormProjectsInfo\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

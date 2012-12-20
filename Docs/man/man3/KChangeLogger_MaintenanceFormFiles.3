@@ -1,0 +1,186 @@
+.TH "KChangeLogger.MaintenanceFormFiles" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceFormFiles \- 
+.PP
+Form showing the files currently linked on the given loaded project\&. Loaded from \fBMaintenanceForm\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceFormFiles\fP (int theProjectID)"
+.br
+.RI "\fIInitializes the form, loads the myProject object\&. Calls BindListBox \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBindListBox\fP ()"
+.br
+.RI "\fISets the filesListBox DataSource\&. \fP"
+.ti -1c
+.RI "void \fBButtonAdd_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for showing the \fBMaintenanceFormFilesAdd\fP form\&. \fP"
+.ti -1c
+.RI "void \fBButtonDelete_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for deleting a given file from within the fileListBox Control and from the Database itself\&. \fP"
+.ti -1c
+.RI "void \fBButtonCancel_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIButton responsible for closing the form\&. \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fI\fBProject\fP Entity used for all the data binding and operations \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ImageList \fBimageList1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ListBox \fBfilesListBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonAdd\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonDelete\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonCancel\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Form showing the files currently linked on the given loaded project\&. Loaded from \fBMaintenanceForm\fP 
+
+
+.PP
+Definition at line 15 of file MaintenanceFormFiles\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MaintenanceFormFiles\&.MaintenanceFormFiles (inttheProjectID)"
+
+.PP
+Initializes the form, loads the myProject object\&. Calls BindListBox \fBParameters:\fP
+.RS 4
+\fItheProjectID\fP ID of the project for DAL assigning
+.RE
+.PP
+
+.PP
+Definition at line 28 of file MaintenanceFormFiles\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceFormFiles\&.BindListBox ()\fC [private]\fP"
+
+.PP
+Sets the filesListBox DataSource\&. 
+.PP
+Definition at line 40 of file MaintenanceFormFiles\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFiles\&.ButtonAdd_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for showing the \fBMaintenanceFormFilesAdd\fP form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file MaintenanceFormFiles\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFiles\&.ButtonCancel_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Button responsible for closing the form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file MaintenanceFormFiles\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFiles\&.ButtonDelete_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for deleting a given file from within the fileListBox Control and from the Database itself\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file MaintenanceFormFiles\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceFormFiles\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceFormFiles\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFiles\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceFormFiles\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceFormFiles\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceFormFiles\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MaintenanceFormFiles\&.myProject\fC [private]\fP"
+
+.PP
+\fBProject\fP Entity used for all the data binding and operations 
+.PP
+Definition at line 20 of file MaintenanceFormFiles\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

@@ -1,0 +1,165 @@
+.TH "KChangeLogger.MaintenanceFormFilesAdd" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceFormFilesAdd \- 
+.PP
+A simple dialog for adding files\&. Can add files manually (inputting text) or use a OpenFileDialog\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceFormFilesAdd\fP (int theProjectID)"
+.br
+.RI "\fIInitializes the form and assigns myProject \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBButtonBrowse_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for showing an OpenFileDialog\&. If user chooses a file sets the TextBoxes values accordingly\&. \fP"
+.ti -1c
+.RI "void \fBButtonAdd_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for adding the entered file to the Database\&. \fP"
+.ti -1c
+.RI "void \fBButtonCancel_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fI\fBProject\fP Entity \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBfileNameTextBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBfilePathTextBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonAdd\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonCancel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonBrowse\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A simple dialog for adding files\&. Can add files manually (inputting text) or use a OpenFileDialog\&. 
+
+
+.PP
+Definition at line 15 of file MaintenanceFormFilesAdd\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MaintenanceFormFilesAdd\&.MaintenanceFormFilesAdd (inttheProjectID)"
+
+.PP
+Initializes the form and assigns myProject \fBParameters:\fP
+.RS 4
+\fItheProjectID\fP the \fBProject\fP ID whose files will be added to
+.RE
+.PP
+
+.PP
+Definition at line 27 of file MaintenanceFormFilesAdd\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceFormFilesAdd\&.ButtonAdd_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for adding the entered file to the Database\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file MaintenanceFormFilesAdd\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFilesAdd\&.ButtonBrowse_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for showing an OpenFileDialog\&. If user chooses a file sets the TextBoxes values accordingly\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file MaintenanceFormFilesAdd\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceFormFilesAdd\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceFormFilesAdd\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormFilesAdd\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceFormFilesAdd\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceFormFilesAdd\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceFormFilesAdd\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MaintenanceFormFilesAdd\&.myProject\fC [private]\fP"
+
+.PP
+\fBProject\fP Entity 
+.PP
+Definition at line 20 of file MaintenanceFormFilesAdd\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

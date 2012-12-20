@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KChangeDB" Class="KChangeDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\KChangeDB.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="KChangeLogger.Properties.Settings" SettingsPropertyName="KChangeDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Project" Member="Projects">
+    <Type Name="Project">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Physical_Path" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Project_Project_Change" Member="Project_Changes" ThisKey="ID" OtherKey="Project_ID" Type="Project_Change" />
+      <Association Name="Project_Project_File" Member="Project_Files" ThisKey="ID" OtherKey="Project_ID" Type="Project_File" />
+      <Association Name="Language_Project" Member="Language1" ThisKey="Language" OtherKey="ID" Type="Language" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Languages" Member="Languages">
+    <Type Name="Language">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Language_Project" Member="Projects" ThisKey="ID" OtherKey="Language" Type="Project" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Change_Type" Member="Change_Types">
+    <Type Name="Change_Type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Change_Type_Project_Change" Member="Project_Changes" ThisKey="ID" OtherKey="ChangeType" Type="Project_Change" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project_Change" Member="Project_Changes">
+    <Type Name="Project_Change">
+      <Column Name="Project_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Change" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="File_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChangeType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChangeDescription" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="ChangedBy" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ChangeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Change_Type_Project_Change" Member="Change_Type" ThisKey="ChangeType" OtherKey="ID" Type="Change_Type" IsForeignKey="true" />
+      <Association Name="Project_Project_Change" Member="Project" ThisKey="Project_ID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Project_File_Project_Change" Member="Project_File" ThisKey="File_ID" OtherKey="File_ID" Type="Project_File" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project_File" Member="Project_Files">
+    <Type Name="Project_File">
+      <Column Name="Project_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="File_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="File_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="File_Path" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Project_File_Project_Change" Member="Project_Change" ThisKey="File_ID" OtherKey="File_ID" Type="Project_Change" />
+      <Association Name="Project_Project_File" Member="Project" ThisKey="Project_ID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Logs">
+    <Type Name="Log">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Log_Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Log_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Log_Message" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Association Name="Log_Type_Log" Member="Log_Type1" ThisKey="Log_Type" OtherKey="ID" Type="Log_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Log_Type" Member="Log_Types">
+    <Type Name="Log_Type">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(400) NOT NULL" CanBeNull="false" />
+      <Association Name="Log_Type_Log" Member="Logs" ThisKey="ID" OtherKey="Log_Type" Type="Log" />
+    </Type>
+  </Table>
+</Database>

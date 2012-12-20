@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KChangeLogger.BaseClasses.BaseContextForm" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseClasses\BaseContextForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.AboutKChange" Collapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIACAAgAACAgCAUAAACAAAADAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\About\AboutKChange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MainForm" Collapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQCAQAAABCAAAAIAAAGCEAQCCAgABBAAAAQAAgABgAA=</HashCode>
+      <FileName>Forms\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceFormChanges" Collapsed="true">
+    <Position X="11.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAACAAAACAAA4AAIAAEAAEAAACAg=</HashCode>
+      <FileName>Forms\Maintenance\Changes\MaintenanceFormChanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceFormChangesDetail" Collapsed="true">
+    <Position X="16.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QQAQAAAAACAAARAAAACgAAACAAAAAAACAAAACAAAAAA=</HashCode>
+      <FileName>Forms\Maintenance\Changes\MaintenanceFormChangesDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceFormFiles" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAECAQABAKAACAAAAKAAQAAAIAAAAAAAABAAA=</HashCode>
+      <FileName>Forms\Maintenance\Files\MaintenanceFormFiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceFormFilesAdd" Collapsed="true">
+    <Position X="5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEDAAABACAACAABAKAAQAAAIAAAAAABAAAAQ=</HashCode>
+      <FileName>Forms\Maintenance\Files\MaintenanceFormFilesAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceForm" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AjgEIAAAECQAABAAAgCAASAGAQQAACICgEAACQAAKAQ=</HashCode>
+      <FileName>Forms\Maintenance\MaintenanceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MaintenanceFormEdit" Collapsed="true">
+    <Position X="14" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAABAQAACBAAACAAAYAAIAAmAAAAAAIAA=</HashCode>
+      <FileName>Forms\Maintenance\MaintenanceFormEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MainFormProjects" Collapsed="true">
+    <Position X="18.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAAKAABABAACDAgAAGgAEAAAIAAAAABAAQAAA=</HashCode>
+      <FileName>Forms\Project\MainFormProjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MainFormProjectsInfo" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAMEIAAACAAABEAABCABAACEAAAAAIIAAAAAAEAEAA=</HashCode>
+      <FileName>Forms\Project\MainFormProjectsInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.MainFormProjectsNew" Collapsed="true">
+    <Position X="7.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACBAABAQAACBAAACAAAYAAAgAmAAAAAAAAA=</HashCode>
+      <FileName>Forms\Project\MainFormProjectsNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.KChangeDataContextDataContext" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABGEAoBHgAIRAgAApAACgAAEiEAAIAAAgkMAEEBiSA=</HashCode>
+      <FileName>KChangeDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.Project" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABiAAADGCEhhgBAQgEEIAQBiCAAYAQEAJRAA4AEABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KChangeLogger.Language" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAABAAEggAAAQAEEAAABiCAAEAAEABQAAAAECQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KChangeLogger.Change_Type" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAADAAEggAAAQAEEAAABiCAAAAAEABQAAgAEABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KChangeLogger.Project_Change" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAgCAABBASABOAAYgEACAABiOBBAIEiCAgUgAIADQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.325" Collapsed="true" />
+  </Class>
+  <Class Name="KChangeLogger.Project_File" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAABAAQAhAAAQAEACAGBiKAIAIEgAAAIgABACQQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KChangeLogger.Program" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.Properties.Resources" Collapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KChangeLogger.Properties.Settings" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

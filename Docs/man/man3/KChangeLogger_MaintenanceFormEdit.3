@@ -1,0 +1,153 @@
+.TH "KChangeLogger.MaintenanceFormEdit" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceFormEdit \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceFormEdit\fP (ref \fBProject\fP theProject)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBindControls\fP ()"
+.br
+.RI "\fIBinds the Controls found on the form to myProject values \fP"
+.ti -1c
+.RI "void \fBbutton1_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIButton responsible for committing the edited \fBProject\fP data \fP"
+.ti -1c
+.RI "void \fBbutton2_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIButton responsible for exiting the form\&. \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectName\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectDescription\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel3\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectPath\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel4\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbutton1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbutton2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ListBox \fBliLanguage\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 12 of file MaintenanceFormEdit\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceFormEdit\&.BindControls ()\fC [private]\fP"
+
+.PP
+Binds the Controls found on the form to myProject values 
+.PP
+Definition at line 29 of file MaintenanceFormEdit\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormEdit\&.button1_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Button responsible for committing the edited \fBProject\fP data \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file MaintenanceFormEdit\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormEdit\&.button2_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Button responsible for exiting the form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 90 of file MaintenanceFormEdit\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceFormEdit\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceFormEdit\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormEdit\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceFormEdit\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceFormEdit\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceFormEdit\&.Designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

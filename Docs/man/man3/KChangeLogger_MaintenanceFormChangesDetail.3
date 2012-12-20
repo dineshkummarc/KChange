@@ -1,0 +1,156 @@
+.TH "KChangeLogger.MaintenanceFormChangesDetail" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceFormChangesDetail \- 
+.PP
+Form containing detailed Changes information of a given change\&. Called from \fBMaintenanceFormChanges\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceFormChangesDetail\fP (int changeId)"
+.br
+.RI "\fICalls BindElements \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBindElements\fP (int changeId)"
+.br
+.RI "\fIBinds \fBProject_Change\fP data on the form\&. \fP"
+.ti -1c
+.RI "void \fBButtonOK_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIOK Event Handler\&. Closes the form\&. \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel3\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBchangeDescriptionTextBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel4\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBchangeChangedOnLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBchangeChangedFileLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBchangeChangedByLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonOK\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Form containing detailed Changes information of a given change\&. Called from \fBMaintenanceFormChanges\fP 
+
+
+.PP
+Definition at line 15 of file MaintenanceFormChangesDetail\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MaintenanceFormChangesDetail\&.MaintenanceFormChangesDetail (intchangeId)"
+
+.PP
+Calls BindElements \fBParameters:\fP
+.RS 4
+\fIchangeId\fP the ID of \fBProject_Change\fP whose data is to be bound
+.RE
+.PP
+
+.PP
+Definition at line 21 of file MaintenanceFormChangesDetail\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceFormChangesDetail\&.BindElements (intchangeId)\fC [private]\fP"
+
+.PP
+Binds \fBProject_Change\fP data on the form\&. \fBParameters:\fP
+.RS 4
+\fIchangeId\fP \fBProject_Change\fP ID to be loaded
+.RE
+.PP
+
+.PP
+Definition at line 31 of file MaintenanceFormChangesDetail\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChangesDetail\&.ButtonOK_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+OK Event Handler\&. Closes the form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file MaintenanceFormChangesDetail\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceFormChangesDetail\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceFormChangesDetail\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChangesDetail\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceFormChangesDetail\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceFormChangesDetail\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceFormChangesDetail\&.Designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

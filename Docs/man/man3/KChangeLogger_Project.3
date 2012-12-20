@@ -1,0 +1,167 @@
+.TH "KChangeLogger.Project" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.Project \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits INotifyPropertyChanging, and INotifyPropertyChanged\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBSendPropertyChanging\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSendPropertyChanged\fP (String propertyName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBDescription\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fBCreated\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBLanguage\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBPhysical_Path\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_Change\fP > \fBProject_Changes\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_File\fP > \fBProject_Files\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBLanguage\fP \fBLanguage1\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "PropertyChangingEventHandler \fBPropertyChanging\fP"
+.br
+.ti -1c
+.RI "PropertyChangedEventHandler \fBPropertyChanged\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnLoaded\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnValidate\fP (System\&.Data\&.Linq\&.ChangeAction action)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnNameChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnNameChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnDescriptionChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnDescriptionChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnCreatedChanging\fP (System\&.DateTime value)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreatedChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnLanguageChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnLanguageChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnPhysical_PathChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnPhysical_PathChanged\fP ()"
+.br
+.ti -1c
+.RI "void \fBattach_Project_Changes\fP (\fBProject_Change\fP entity)"
+.br
+.ti -1c
+.RI "void \fBdetach_Project_Changes\fP (\fBProject_Change\fP entity)"
+.br
+.ti -1c
+.RI "void \fBattach_Project_Files\fP (\fBProject_File\fP entity)"
+.br
+.ti -1c
+.RI "void \fBdetach_Project_Files\fP (\fBProject_File\fP entity)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_ID\fP"
+.br
+.ti -1c
+.RI "string \fB_Name\fP"
+.br
+.ti -1c
+.RI "string \fB_Description\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fB_Created\fP"
+.br
+.ti -1c
+.RI "int \fB_Language\fP"
+.br
+.ti -1c
+.RI "string \fB_Physical_Path\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_Change\fP > \fB_Project_Changes\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_File\fP > \fB_Project_Files\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBLanguage\fP > \fB_Language1\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static PropertyChangingEventArgs \fBemptyChangingEventArgs\fP = new PropertyChangingEventArgs(String\&.Empty)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 144 of file KChangeDataContext\&.designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

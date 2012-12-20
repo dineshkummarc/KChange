@@ -1,0 +1,26 @@
+var namespace_k_change_logger =
+[
+    [ "BaseClasses", "namespace_k_change_logger_1_1_base_classes.html", "namespace_k_change_logger_1_1_base_classes" ],
+    [ "Properties", "namespace_k_change_logger_1_1_properties.html", null ],
+    [ "Utilities", "namespace_k_change_logger_1_1_utilities.html", "namespace_k_change_logger_1_1_utilities" ],
+    [ "AboutKChange", "class_k_change_logger_1_1_about_k_change.html", "class_k_change_logger_1_1_about_k_change" ],
+    [ "MainForm", "class_k_change_logger_1_1_main_form.html", "class_k_change_logger_1_1_main_form" ],
+    [ "MaintenanceFormChanges", "class_k_change_logger_1_1_maintenance_form_changes.html", "class_k_change_logger_1_1_maintenance_form_changes" ],
+    [ "MaintenanceFormChangesDetail", "class_k_change_logger_1_1_maintenance_form_changes_detail.html", "class_k_change_logger_1_1_maintenance_form_changes_detail" ],
+    [ "MaintenanceFormFiles", "class_k_change_logger_1_1_maintenance_form_files.html", "class_k_change_logger_1_1_maintenance_form_files" ],
+    [ "MaintenanceFormFilesAdd", "class_k_change_logger_1_1_maintenance_form_files_add.html", "class_k_change_logger_1_1_maintenance_form_files_add" ],
+    [ "MaintenanceForm", "class_k_change_logger_1_1_maintenance_form.html", "class_k_change_logger_1_1_maintenance_form" ],
+    [ "MaintenanceFormEdit", "class_k_change_logger_1_1_maintenance_form_edit.html", "class_k_change_logger_1_1_maintenance_form_edit" ],
+    [ "MainFormProjects", "class_k_change_logger_1_1_main_form_projects.html", "class_k_change_logger_1_1_main_form_projects" ],
+    [ "MainFormProjectsInfo", "class_k_change_logger_1_1_main_form_projects_info.html", "class_k_change_logger_1_1_main_form_projects_info" ],
+    [ "MainFormProjectsNew", "class_k_change_logger_1_1_main_form_projects_new.html", "class_k_change_logger_1_1_main_form_projects_new" ],
+    [ "KChangeDataContextDataContext", "class_k_change_logger_1_1_k_change_data_context_data_context.html", "class_k_change_logger_1_1_k_change_data_context_data_context" ],
+    [ "Project", "class_k_change_logger_1_1_project.html", "class_k_change_logger_1_1_project" ],
+    [ "Language", "class_k_change_logger_1_1_language.html", "class_k_change_logger_1_1_language" ],
+    [ "Change_Type", "class_k_change_logger_1_1_change___type.html", "class_k_change_logger_1_1_change___type" ],
+    [ "Project_Change", "class_k_change_logger_1_1_project___change.html", "class_k_change_logger_1_1_project___change" ],
+    [ "Project_File", "class_k_change_logger_1_1_project___file.html", "class_k_change_logger_1_1_project___file" ],
+    [ "Log", "class_k_change_logger_1_1_log.html", "class_k_change_logger_1_1_log" ],
+    [ "Log_Type", "class_k_change_logger_1_1_log___type.html", "class_k_change_logger_1_1_log___type" ],
+    [ "Program", "class_k_change_logger_1_1_program.html", "class_k_change_logger_1_1_program" ]
+];

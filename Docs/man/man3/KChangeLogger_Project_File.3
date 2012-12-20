@@ -1,0 +1,131 @@
+.TH "KChangeLogger.Project_File" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.Project_File \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits INotifyPropertyChanging, and INotifyPropertyChanged\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBSendPropertyChanging\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSendPropertyChanged\fP (String propertyName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBProject_ID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBFile_ID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBFile_Name\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBFile_Path\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_Change\fP > \fBProject_Change\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBProject\fP \fBProject\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "PropertyChangingEventHandler \fBPropertyChanging\fP"
+.br
+.ti -1c
+.RI "PropertyChangedEventHandler \fBPropertyChanged\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnLoaded\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnValidate\fP (System\&.Data\&.Linq\&.ChangeAction action)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnProject_IDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnProject_IDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_IDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_IDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_NameChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_NameChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_PathChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_PathChanged\fP ()"
+.br
+.ti -1c
+.RI "void \fBattach_Project_Change\fP (\fBProject_Change\fP entity)"
+.br
+.ti -1c
+.RI "void \fBdetach_Project_Change\fP (\fBProject_Change\fP entity)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_Project_ID\fP"
+.br
+.ti -1c
+.RI "int \fB_File_ID\fP"
+.br
+.ti -1c
+.RI "string \fB_File_Name\fP"
+.br
+.ti -1c
+.RI "string \fB_File_Path\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject_Change\fP > \fB_Project_Change\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBProject\fP > \fB_Project\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static PropertyChangingEventArgs \fBemptyChangingEventArgs\fP = new PropertyChangingEventArgs(String\&.Empty)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 980 of file KChangeDataContext\&.designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

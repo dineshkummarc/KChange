@@ -1,0 +1,172 @@
+.TH "KChangeLogger.MainFormProjectsNew" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MainFormProjectsNew \- 
+.PP
+A Dialog used for creating a new \fBProject\fP Entity in the database  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainFormProjectsNew\fP ()"
+.br
+.RI "\fIInitializes the Form Controls, calls BindLanguagesListBox \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbutton2_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fICloses the form \fP"
+.ti -1c
+.RI "void \fBbutton1_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for adding the data\&. Performs validation and displays a MessageBox telling the user whether adding the project succeeded or failed Also closes the form \fP"
+.ti -1c
+.RI "void \fBliLanguage_SelectedIndexChanged\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBBindLanguagesListBox\fP ()"
+.br
+.RI "\fIBinds the liLanguage Control's DataSource \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ImageList \fBimageList1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectName\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectDescription\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel3\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBtbProjectPath\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel4\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbutton1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbutton2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ComboBox \fBliLanguage\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A Dialog used for creating a new \fBProject\fP Entity in the database 
+
+
+.PP
+Definition at line 15 of file MainFormProjectsNew\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MainFormProjectsNew\&.MainFormProjectsNew ()"
+
+.PP
+Initializes the Form Controls, calls BindLanguagesListBox 
+.PP
+Definition at line 20 of file MainFormProjectsNew\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MainFormProjectsNew\&.BindLanguagesListBox ()\fC [private]\fP"
+
+.PP
+Binds the liLanguage Control's DataSource 
+.PP
+Definition at line 97 of file MainFormProjectsNew\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsNew\&.button1_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for adding the data\&. Performs validation and displays a MessageBox telling the user whether adding the project succeeded or failed Also closes the form \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file MainFormProjectsNew\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsNew\&.button2_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Closes the form \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file MainFormProjectsNew\&.cs\&.
+.SS "override void KChangeLogger\&.MainFormProjectsNew\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MainFormProjectsNew\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjectsNew\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MainFormProjectsNew\&.Designer\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MainFormProjectsNew\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MainFormProjectsNew\&.Designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

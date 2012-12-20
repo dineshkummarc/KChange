@@ -1,0 +1,231 @@
+.TH "KChangeLogger.MainForm" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MainForm \- 
+.PP
+The main screen fired upon application start  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Form\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainForm\fP ()"
+.br
+.RI "\fIInitializes all designer controls\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBcurrentProject\fP"
+.br
+.RI "\fIthe \fBProject\fP Entity loaded (or not) \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprojectsToolStripMenuItem_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for loading the \fBMainFormProjects\fP view\&. Also sets the currentProject \fBProject\fP Entity value\&. \fP"
+.ti -1c
+.RI "void \fBaboutKChangeLoggerToolStripMenuItem_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for showing the About screen\&. \fP"
+.ti -1c
+.RI "void \fBexitToolStripMenuItem_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for Exitting the application\&. \fP"
+.ti -1c
+.RI "void \fBUpdateProjectLabel\fP (Boolean updateMode)"
+.br
+.RI "\fIUpdates the \fBProject\fP Name label based on the given input Boolean Also updates the Enabled state of the MaintenanceButton \fP"
+.ti -1c
+.RI "void \fBMaintenanceButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIResponsible for showing the \fBMaintenanceForm\fP, practically the heart of the application \fP"
+.ti -1c
+.RI "void \fBfileToolStripMenuItem_Click\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBMainForm_Load\fP (object sender, EventArgs e)"
+.br
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBKChangeDataContextDataContext\fP \fBData\fP = new \fBKChangeDataContextDataContext\fP()"
+.br
+.RI "\fIDAL \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.MenuStrip \fBmenuStrip1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ToolStripMenuItem \fBfileToolStripMenuItem\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ToolStripMenuItem \fBprojectsToolStripMenuItem\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ToolStripMenuItem \fBexitToolStripMenuItem\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ToolStripMenuItem \fBaboutToolStripMenuItem\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ToolStripMenuItem \fBaboutKChangeLoggerToolStripMenuItem\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBcurrentProjectLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBprojectNameLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBMaintenanceButton\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The main screen fired upon application start 
+
+
+.PP
+Definition at line 15 of file MainForm\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MainForm\&.MainForm ()"
+
+.PP
+Initializes all designer controls\&. 
+.PP
+Definition at line 30 of file MainForm\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MainForm\&.aboutKChangeLoggerToolStripMenuItem_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for showing the About screen\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file MainForm\&.cs\&.
+.SS "override void KChangeLogger\&.MainForm\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MainForm\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainForm\&.exitToolStripMenuItem_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for Exitting the application\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file MainForm\&.cs\&.
+.SS "void KChangeLogger\&.MainForm\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MainForm\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainForm\&.MaintenanceButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for showing the \fBMaintenanceForm\fP, practically the heart of the application \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file MainForm\&.cs\&.
+.SS "void KChangeLogger\&.MainForm\&.projectsToolStripMenuItem_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Responsible for loading the \fBMainFormProjects\fP view\&. Also sets the currentProject \fBProject\fP Entity value\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file MainForm\&.cs\&.
+.SS "void KChangeLogger\&.MainForm\&.UpdateProjectLabel (BooleanupdateMode)\fC [private]\fP"
+
+.PP
+Updates the \fBProject\fP Name label based on the given input Boolean Also updates the Enabled state of the MaintenanceButton \fBParameters:\fP
+.RS 4
+\fIupdateMode\fP Boolean, if true - enable\&. If false - disable\&. 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file MainForm\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MainForm\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MainForm\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MainForm\&.currentProject"
+
+.PP
+the \fBProject\fP Entity loaded (or not) 
+.PP
+Definition at line 24 of file MainForm\&.cs\&.
+.SS "\fBKChangeDataContextDataContext\fP KChangeLogger\&.MainForm\&.Data = new \fBKChangeDataContextDataContext\fP()\fC [private]\fP"
+
+.PP
+DAL 
+.PP
+Definition at line 20 of file MainForm\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

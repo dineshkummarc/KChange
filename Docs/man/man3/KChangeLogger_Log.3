@@ -1,0 +1,119 @@
+.TH "KChangeLogger.Log" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.Log \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits INotifyPropertyChanging, and INotifyPropertyChanged\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBSendPropertyChanging\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSendPropertyChanged\fP (String propertyName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBLog_Type\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fBLog_Time\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBLog_Message\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBLog_Type\fP \fBLog_Type1\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "PropertyChangingEventHandler \fBPropertyChanging\fP"
+.br
+.ti -1c
+.RI "PropertyChangedEventHandler \fBPropertyChanged\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnLoaded\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnValidate\fP (System\&.Data\&.Linq\&.ChangeAction action)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_TypeChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_TypeChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_TimeChanging\fP (System\&.DateTime value)"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_TimeChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_MessageChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnLog_MessageChanged\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_ID\fP"
+.br
+.ti -1c
+.RI "int \fB_Log_Type\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fB_Log_Time\fP"
+.br
+.ti -1c
+.RI "string \fB_Log_Message\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBLog_Type\fP > \fB_Log_Type1\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static PropertyChangingEventArgs \fBemptyChangingEventArgs\fP = new PropertyChangingEventArgs(String\&.Empty)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1183 of file KChangeDataContext\&.designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

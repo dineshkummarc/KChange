@@ -1,0 +1,27 @@
+var class_k_change_logger_1_1_main_form_projects_info =
+[
+    [ "MainFormProjectsInfo", "class_k_change_logger_1_1_main_form_projects_info.html#afe03368c50d7367c577f1a570dd90458", null ],
+    [ "BindData", "class_k_change_logger_1_1_main_form_projects_info.html#ad57b1280bde5f8ccadc197525020ef5d", null ],
+    [ "buttonCancel_Click", "class_k_change_logger_1_1_main_form_projects_info.html#a110463c77d6a421a1c0e41decde2c8b3", null ],
+    [ "buttonOK_Click", "class_k_change_logger_1_1_main_form_projects_info.html#ac4b61bfc485ad382ef7d2ba7b1bc4162", null ],
+    [ "Dispose", "class_k_change_logger_1_1_main_form_projects_info.html#a1f6605c259b956c9967b9c1ab72d4dd2", null ],
+    [ "InitializeComponent", "class_k_change_logger_1_1_main_form_projects_info.html#a8922387d7e7190ec9f2ca6b82234d5bd", null ],
+    [ "MainFormProjectsInfo_Load", "class_k_change_logger_1_1_main_form_projects_info.html#ac65e2e5a92767666a4e95616cf4df765", null ],
+    [ "buttonCancel", "class_k_change_logger_1_1_main_form_projects_info.html#a3060044bacef7605708d7765f594c162", null ],
+    [ "buttonOK", "class_k_change_logger_1_1_main_form_projects_info.html#ac1054861ac7d16a2a06d83ef2e49ff3a", null ],
+    [ "Cancelled", "class_k_change_logger_1_1_main_form_projects_info.html#ab684a58ab27a8767239f2816f0739fce", null ],
+    [ "components", "class_k_change_logger_1_1_main_form_projects_info.html#a36ea011f112ef2c75a36621d0b250f1c", null ],
+    [ "label1", "class_k_change_logger_1_1_main_form_projects_info.html#aaf0366530e012fdeb0521deab33d13d1", null ],
+    [ "label2", "class_k_change_logger_1_1_main_form_projects_info.html#a34544bb84edfdf181e29d1bcaef89c3e", null ],
+    [ "label3", "class_k_change_logger_1_1_main_form_projects_info.html#a67725278ad16a7aeb4a2a6f9729e41d2", null ],
+    [ "label4", "class_k_change_logger_1_1_main_form_projects_info.html#a66d21c97a107dde2a9d588bb09d6a3e3", null ],
+    [ "label5", "class_k_change_logger_1_1_main_form_projects_info.html#a6ecc612a7c19e84e9013a3974fdb394e", null ],
+    [ "label7", "class_k_change_logger_1_1_main_form_projects_info.html#ad8d0d2deaba0f5901558669ddb4cfce1", null ],
+    [ "myProject", "class_k_change_logger_1_1_main_form_projects_info.html#afc0ea721550cc1a4a75b216daf340209", null ],
+    [ "ProjectCreatedLabel", "class_k_change_logger_1_1_main_form_projects_info.html#a1f0fe2b9c101ca12a2831ba86d9d2a94", null ],
+    [ "ProjectDescriptionLabel", "class_k_change_logger_1_1_main_form_projects_info.html#af72d0c7c7c54ebd6b2a9f5bed234b34b", null ],
+    [ "ProjectLastChangedLabel", "class_k_change_logger_1_1_main_form_projects_info.html#ae6010d9cd23a82072cb9293e55f791c1", null ],
+    [ "ProjectNameLabel", "class_k_change_logger_1_1_main_form_projects_info.html#a289ec25890716bf5463f5607e8b9fed7", null ],
+    [ "ProjectNumberOfFilesLabel", "class_k_change_logger_1_1_main_form_projects_info.html#a7d89c5e2ac3a88269e3a36356d7e871c", null ],
+    [ "ProjectPathLabel", "class_k_change_logger_1_1_main_form_projects_info.html#ab349ba98f12d250a79546648a268542b", null ]
+];

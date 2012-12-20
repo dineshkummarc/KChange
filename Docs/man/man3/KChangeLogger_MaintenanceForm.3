@@ -1,0 +1,298 @@
+.TH "KChangeLogger.MaintenanceForm" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceForm \- 
+.PP
+Screen allowing you to quickly add a \fBProject\fP change\&. Heart of the application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceForm\fP (int theProjectID)"
+.br
+.RI "\fILoads the controls, myProject entity and calls \fBBindControls()\fP \fP"
+.ti -1c
+.RI "void \fBBindControls\fP ()"
+.br
+.RI "\fIBinds Controls on the basis of myProject \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBButtonCancel_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles the situation where the user clicked on Clear, removes input in all input controls\&. \fP"
+.ti -1c
+.RI "void \fBButtonAddChange_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIMain function of the form - Manages the Adding of a New Change to a selected \fBProject\fP \fP"
+.ti -1c
+.RI "void \fBChangesButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles the display of the \fBMaintenanceFormChanges\fP as ShowDialog and disposes it\&. \fP"
+.ti -1c
+.RI "void \fBEditButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles the display of the \fBMaintenanceFormEdit\fP as ShowDialog and disposes it\&. \fP"
+.ti -1c
+.RI "void \fBFilesButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles the display of the \fBMaintenanceFormFiles\fP as ShowDialog and disposes it\&. \fP"
+.ti -1c
+.RI "void \fBClearControls\fP ()"
+.br
+.RI "\fIClears the controls for new entry / refresh\&. \fP"
+.ti -1c
+.RI "string \fBValidateChangeInput\fP ()"
+.br
+.RI "\fIChecks whether given input on the form is correct\&. \fP"
+.ti -1c
+.RI "void \fBButtonExit_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fICloses the form\&. \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fI\fBProject\fP Entity loaded from within \fBMainForm\fP \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Panel \fBpanel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBAddChangeLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBchangeDescriptionTextBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBChangeDescriptionLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel2\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel3\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.TextBox \fBchangeByTextBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBlabel4\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonCancel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonAddChange\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBChangesButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBFilesButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBEditButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectNameLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Label \fBProjectLanguageLabel\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonExit\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ComboBox \fBchangeFileComboBox\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.ComboBox \fBchangeTypeComboBox\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Screen allowing you to quickly add a \fBProject\fP change\&. Heart of the application\&. 
+
+
+.PP
+Definition at line 16 of file MaintenanceForm\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MaintenanceForm\&.MaintenanceForm (inttheProjectID)"
+
+.PP
+Loads the controls, myProject entity and calls \fBBindControls()\fP \fBParameters:\fP
+.RS 4
+\fItheProjectID\fP the ID of the \fBProject\fP Entity to be loaded
+.RE
+.PP
+
+.PP
+Definition at line 28 of file MaintenanceForm\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceForm\&.BindControls ()"
+
+.PP
+Binds Controls on the basis of myProject 
+.PP
+Definition at line 85 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.ButtonAddChange_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Main function of the form - Manages the Adding of a New Change to a selected \fBProject\fP \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.ButtonCancel_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles the situation where the user clicked on Clear, removes input in all input controls\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.ButtonExit_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Closes the form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.ChangesButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles the display of the \fBMaintenanceFormChanges\fP as ShowDialog and disposes it\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.ClearControls ()\fC [private]\fP"
+
+.PP
+Clears the controls for new entry / refresh\&. 
+.PP
+Definition at line 139 of file MaintenanceForm\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceForm\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceForm\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.EditButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles the display of the \fBMaintenanceFormEdit\fP as ShowDialog and disposes it\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 114 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.FilesButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles the display of the \fBMaintenanceFormFiles\fP as ShowDialog and disposes it\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file MaintenanceForm\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceForm\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceForm\&.Designer\&.cs\&.
+.SS "string KChangeLogger\&.MaintenanceForm\&.ValidateChangeInput ()\fC [private]\fP"
+
+.PP
+Checks whether given input on the form is correct\&. \fBReturns:\fP
+.RS 4
+'OK' if all input is valid 'Errmsg' if there is an error 
+.RE
+.PP
+
+.PP
+Definition at line 157 of file MaintenanceForm\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceForm\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceForm\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MaintenanceForm\&.myProject\fC [private]\fP"
+
+.PP
+\fBProject\fP Entity loaded from within \fBMainForm\fP 
+.PP
+Definition at line 21 of file MaintenanceForm\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

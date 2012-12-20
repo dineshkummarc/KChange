@@ -1,0 +1,25 @@
+var class_k_change_logger_1_1_main_form =
+[
+    [ "MainForm", "class_k_change_logger_1_1_main_form.html#ae03a0c6d5e6d196049bbe80a4683851f", null ],
+    [ "aboutKChangeLoggerToolStripMenuItem_Click", "class_k_change_logger_1_1_main_form.html#af562c1fdee628a0bcb41a9e7d0b64859", null ],
+    [ "Dispose", "class_k_change_logger_1_1_main_form.html#aee15b4b76ee44d8fd02f134b3f985e17", null ],
+    [ "exitToolStripMenuItem_Click", "class_k_change_logger_1_1_main_form.html#a5294cb70b391c0d6458459db8faf34de", null ],
+    [ "fileToolStripMenuItem_Click", "class_k_change_logger_1_1_main_form.html#a16f0e017a7778b6aa59711dc900647ec", null ],
+    [ "InitializeComponent", "class_k_change_logger_1_1_main_form.html#affa2568b6c1a9f53974efa176e303a2a", null ],
+    [ "MainForm_Load", "class_k_change_logger_1_1_main_form.html#a4f3e5b461eb9a9895b988e8c6483aaa7", null ],
+    [ "MaintenanceButton_Click", "class_k_change_logger_1_1_main_form.html#a842fa58f0f8477873c60626f5031f4f1", null ],
+    [ "projectsToolStripMenuItem_Click", "class_k_change_logger_1_1_main_form.html#a8fd865c99e0da0ba9d7ad8db910494a9", null ],
+    [ "UpdateProjectLabel", "class_k_change_logger_1_1_main_form.html#ac378142317f33c673b0fe51d458787f3", null ],
+    [ "aboutKChangeLoggerToolStripMenuItem", "class_k_change_logger_1_1_main_form.html#a2a5076d2ba8b776e47bacff51598e67a", null ],
+    [ "aboutToolStripMenuItem", "class_k_change_logger_1_1_main_form.html#a93c1ff610837132479a8438141b55a08", null ],
+    [ "components", "class_k_change_logger_1_1_main_form.html#a0f48d79f917ff960c791f54916bf0fcb", null ],
+    [ "currentProject", "class_k_change_logger_1_1_main_form.html#a0c4d9ad4e4b40fa1eb6953ed2f53e519", null ],
+    [ "currentProjectLabel", "class_k_change_logger_1_1_main_form.html#a6cdb18266f45d44c22d6b06d5e761a19", null ],
+    [ "Data", "class_k_change_logger_1_1_main_form.html#a0e90c9a146579eebf64990a1ef2811f4", null ],
+    [ "exitToolStripMenuItem", "class_k_change_logger_1_1_main_form.html#a994fab658c650e25c35b6cfaad44734d", null ],
+    [ "fileToolStripMenuItem", "class_k_change_logger_1_1_main_form.html#a60961377bde9d4eb5295ddc68bacaf65", null ],
+    [ "MaintenanceButton", "class_k_change_logger_1_1_main_form.html#a47b493f913f3425dfedebc63cf6569b0", null ],
+    [ "menuStrip1", "class_k_change_logger_1_1_main_form.html#a0d804e270f1cffdbd75131f70bf87883", null ],
+    [ "projectNameLabel", "class_k_change_logger_1_1_main_form.html#a90a13812252be5cafb77b9ad652a232f", null ],
+    [ "projectsToolStripMenuItem", "class_k_change_logger_1_1_main_form.html#a48d0a2073b39d7540800619c44282291", null ]
+];

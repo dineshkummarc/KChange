@@ -1,0 +1,231 @@
+.TH "KChangeLogger.MainFormProjects" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MainFormProjects \- 
+.PP
+Screen showing all projects in a DataGridView\&. Called from \fBMainForm\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainFormProjects\fP ()"
+.br
+.RI "\fIInitializes the Controls, Resizes the GridView programmatically to match Data length\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fI\fBProject\fP Entity, used in \fBMainForm\fP for loading the project\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRefreshGridView\fP ()"
+.br
+.RI "\fIUsed to Load/Refresh the GridView of \fBMainFormProjects\fP \fP"
+.ti -1c
+.RI "void \fBResizeColumns\fP ()"
+.br
+.RI "\fIFunction used to resize the columns in the MainFormProject GridView \fP"
+.ti -1c
+.RI "void \fBNewButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles NewButton's onClick event Creates a new Window that allows the user to create a new \fBProject\fP Entity \fP"
+.ti -1c
+.RI "void \fBDeleteButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIHandles the DeleteButton onClick event\&. Deletes the given selected \fBProject\fP Entity attached to a given row\&. \fP"
+.ti -1c
+.RI "void \fBCancelButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fICancells out the dialog, setting myProject to null\&. \fP"
+.ti -1c
+.RI "void \fBRefreshButton_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIButton click handler used to refresh the GridView's contents manually \fP"
+.ti -1c
+.RI "void \fBProjectsGV_CellContentClick\fP (object sender, DataGridViewCellEventArgs e)"
+.br
+.ti -1c
+.RI "void \fBProjectsGV_CellClick\fP (object sender, DataGridViewCellEventArgs e)"
+.br
+.ti -1c
+.RI "void \fBProjectsGV_CellDoubleClick\fP (object sender, DataGridViewCellEventArgs e)"
+.br
+.RI "\fIMain Button click event handler, used to select the curProject field in the main form\&. \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.DataGridView \fBProjectsGV\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBRefreshButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBNewButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBCancelButton\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBDeleteButton\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Screen showing all projects in a DataGridView\&. Called from \fBMainForm\fP 
+
+
+.PP
+Definition at line 15 of file MainFormProjects\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MainFormProjects\&.MainFormProjects ()"
+
+.PP
+Initializes the Controls, Resizes the GridView programmatically to match Data length\&. 
+.PP
+Definition at line 25 of file MainFormProjects\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MainFormProjects\&.CancelButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Cancells out the dialog, setting myProject to null\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 115 of file MainFormProjects\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.DeleteButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles the DeleteButton onClick event\&. Deletes the given selected \fBProject\fP Entity attached to a given row\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 79 of file MainFormProjects\&.cs\&.
+.SS "override void KChangeLogger\&.MainFormProjects\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MainFormProjects\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MainFormProjects\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.NewButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Handles NewButton's onClick event Creates a new Window that allows the user to create a new \fBProject\fP Entity \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file MainFormProjects\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.ProjectsGV_CellDoubleClick (objectsender, DataGridViewCellEventArgse)\fC [private]\fP"
+
+.PP
+Main Button click event handler, used to select the curProject field in the main form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file MainFormProjects\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.RefreshButton_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Button click handler used to refresh the GridView's contents manually \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 125 of file MainFormProjects\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.RefreshGridView ()\fC [private]\fP"
+
+.PP
+Used to Load/Refresh the GridView of \fBMainFormProjects\fP 
+.PP
+Definition at line 36 of file MainFormProjects\&.cs\&.
+.SS "void KChangeLogger\&.MainFormProjects\&.ResizeColumns ()\fC [private]\fP"
+
+.PP
+Function used to resize the columns in the MainFormProject GridView 
+.PP
+Definition at line 54 of file MainFormProjects\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MainFormProjects\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MainFormProjects\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MainFormProjects\&.myProject"
+
+.PP
+\fBProject\fP Entity, used in \fBMainForm\fP for loading the project\&. 
+.PP
+Definition at line 20 of file MainFormProjects\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

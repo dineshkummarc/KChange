@@ -1,0 +1,629 @@
+.TH "KChangeLogger.KChangeDataContextDataContext" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.KChangeDataContextDataContext \- 
+.PP
+Data Access Layer for KChange  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits DataContext\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBGetProject\fP (string projectName)"
+.br
+.RI "\fIFunction used to obtain a \fBProject\fP entity based on the name \fP"
+.ti -1c
+.RI "\fBProject\fP \fBGetProject\fP (int projectID)"
+.br
+.RI "\fIFunction used to obtain a \fBProject\fP entity based on the ID \fP"
+.ti -1c
+.RI "bool \fBAddProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIAttemps to add a \fBProject\fP entity into the Projects EntitySet of the Context \fP"
+.ti -1c
+.RI "bool \fBRemoveProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIAttemps to remove a \fBProject\fP Entity from the Projects EntitySet \fP"
+.ti -1c
+.RI "List< \fBProject_File\fP > \fBGetFilesByProject\fP (string projectName)"
+.br
+.RI "\fIObtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by string projectName \fP"
+.ti -1c
+.RI "List< \fBProject_File\fP > \fBGetFilesByProject\fP (int projectID)"
+.br
+.RI "\fIObtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by int projectID \fP"
+.ti -1c
+.RI "List< \fBProject_File\fP > \fBGetFilesByProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIObtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by the \fBProject\fP entity \fP"
+.ti -1c
+.RI "List< string > \fBGetFileNamesByProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIObtains a List of all File Names attached to a given \fBProject\fP Entity\&. \fP"
+.ti -1c
+.RI "int \fBGetNumberOfFilesByProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIReturns the number of Project_Files of a given \fBProject\fP \fP"
+.ti -1c
+.RI "\fBProject_File\fP \fBGetFileByName\fP (\fBProject\fP theProject, string fileName)"
+.br
+.RI "\fIGets a reference to a \fBProject\fP File Entity of a given \fBProject\fP entity based on fileName \fP"
+.ti -1c
+.RI "bool \fBRemoveFile\fP (\fBProject_File\fP theFile)"
+.br
+.RI "\fIAttemps to remove a \fBProject_File\fP entity from the Project_Files EntitySet \fP"
+.ti -1c
+.RI "bool \fBAddFile\fP (\fBProject_File\fP theFile)"
+.br
+.RI "\fIAttempts to attach a \fBProject_File\fP Entity to Project_Files EntitySet \fP"
+.ti -1c
+.RI "bool \fBDoesFileExist\fP (\fBProject\fP theProject, string fileName)"
+.br
+.RI "\fIAttempts to find a given \fBProject_File\fP Entity from theProject's Project_Files EntitySet \fP"
+.ti -1c
+.RI "DateTime \fBGetLastChange\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIObtains the datetime assigned to the last change of a given \fBProject\fP Entity \fP"
+.ti -1c
+.RI "List< \fBProject_Change\fP > \fBGetChangesByProject\fP (\fBProject\fP theProject)"
+.br
+.RI "\fIAttempts to return a List of \fBProject_Change\fP Entities of a \fBProject\fP Entity \fP"
+.ti -1c
+.RI "\fBProject_Change\fP \fBGetChangeById\fP (int theID)"
+.br
+.RI "\fIAttempts to Obtain a \fBProject_Change\fP Entity based on the ID value \fP"
+.ti -1c
+.RI "bool \fBInsertChange\fP (\fBProject_Change\fP theChange)"
+.br
+.RI "\fIAttempts to insert a given \fBProject_Change\fP Entity into Project_Changes EntitySet \fP"
+.ti -1c
+.RI "\fBLanguage\fP \fBGetLanguage\fP (string langDescription)"
+.br
+.RI "\fIGets a given \fBLanguage\fP Entity based on its Description \fP"
+.ti -1c
+.RI "List< string > \fBGetLanguageDescriptions\fP ()"
+.br
+.RI "\fICreate a List of Strings based on the \fBLanguage\fP EntitySet's Description member \fP"
+.ti -1c
+.RI "List< \fBChange_Type\fP > \fBGetChangeTypes\fP ()"
+.br
+.RI "\fICreates a List of \fBChange_Type\fP Entities from the Change_Types EntitySet \fP"
+.ti -1c
+.RI "List< string > \fBGetChangeTypesDescriptions\fP ()"
+.br
+.RI "\fICreates a List of strings containing all Change_Types Entities' Description member \fP"
+.ti -1c
+.RI "\fBChange_Type\fP \fBGetChangeTypeByDescription\fP (string description)"
+.br
+.RI "\fIAttempts to obtain a \fBChange_Type\fP Entity from the Change_Types EntitySet based on the description \fP"
+.ti -1c
+.RI "bool \fBAddLog\fP (\fBLog\fP theLog)"
+.br
+.RI "\fIAttempts to insert a \fBLog\fP Entity into the Logs EntitySet \fP"
+.ti -1c
+.RI "List< \fBLog_Type\fP > \fBGetLogTypes\fP ()"
+.br
+.RI "\fICreates a List of \fBLog_Type\fP from the Log_Types EntitySet \fP"
+.ti -1c
+.RI "List< string > \fBGetLogTypesDescriptions\fP ()"
+.br
+.RI "\fICreates a List of string containing each \fBLog_Type\fP's Description \fP"
+.ti -1c
+.RI "\fBKChangeDataContextDataContext\fP (string connection)"
+.br
+.ti -1c
+.RI "\fBKChangeDataContextDataContext\fP (System\&.Data\&.IDbConnection connection)"
+.br
+.ti -1c
+.RI "\fBKChangeDataContextDataContext\fP (string connection, System\&.Data\&.Linq\&.Mapping\&.MappingSource mappingSource)"
+.br
+.ti -1c
+.RI "\fBKChangeDataContextDataContext\fP (System\&.Data\&.IDbConnection connection, System\&.Data\&.Linq\&.Mapping\&.MappingSource mappingSource)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table< \fBProject\fP > \fBProjects\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table< \fBLanguage\fP > \fBLanguages\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table
+.br
+< \fBChange_Type\fP > \fBChange_Types\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table
+.br
+< \fBProject_Change\fP > \fBProject_Changes\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table
+.br
+< \fBProject_File\fP > \fBProject_Files\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table< \fBLog\fP > \fBLogs\fP\fC [get]\fP"
+.br
+.ti -1c
+.RI "System\&.Data\&.Linq\&.Table< \fBLog_Type\fP > \fBLog_Types\fP\fC [get]\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBInsertProject\fP (\fBProject\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateProject\fP (\fBProject\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteProject\fP (\fBProject\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertLanguage\fP (\fBLanguage\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateLanguage\fP (\fBLanguage\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteLanguage\fP (\fBLanguage\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertChange_Type\fP (\fBChange_Type\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateChange_Type\fP (\fBChange_Type\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteChange_Type\fP (\fBChange_Type\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertProject_Change\fP (\fBProject_Change\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateProject_Change\fP (\fBProject_Change\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteProject_Change\fP (\fBProject_Change\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertProject_File\fP (\fBProject_File\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateProject_File\fP (\fBProject_File\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteProject_File\fP (\fBProject_File\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertLog\fP (\fBLog\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateLog\fP (\fBLog\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteLog\fP (\fBLog\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBInsertLog_Type\fP (\fBLog_Type\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBUpdateLog_Type\fP (\fBLog_Type\fP instance)"
+.br
+.ti -1c
+.RI "partial void \fBDeleteLog_Type\fP (\fBLog_Type\fP instance)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static 
+.br
+System\&.Data\&.Linq\&.Mapping\&.MappingSource \fBmappingSource\fP = new AttributeMappingSource()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Data Access Layer for KChange 
+
+
+.PP
+Definition at line 10 of file KChangeDataContext\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.AddFile (\fBProject_File\fPtheFile)"
+
+.PP
+Attempts to attach a \fBProject_File\fP Entity to Project_Files EntitySet \fBParameters:\fP
+.RS 4
+\fItheFile\fP \fBProject_File\fP Entity to be attached
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon success, false upon failure
+.RE
+.PP
+
+.PP
+Definition at line 212 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.AddLog (\fBLog\fPtheLog)"
+
+.PP
+Attempts to insert a \fBLog\fP Entity into the Logs EntitySet \fBParameters:\fP
+.RS 4
+\fItheLog\fP the \fBLog\fP Entity to be inserted
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon success, false upon failure
+.RE
+.PP
+
+.PP
+Definition at line 398 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.AddProject (\fBProject\fPtheProject)"
+
+.PP
+Attemps to add a \fBProject\fP entity into the Projects EntitySet of the Context \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP Entity to be inserted
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon success, false upon failure
+.RE
+.PP
+
+.PP
+Definition at line 58 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.DoesFileExist (\fBProject\fPtheProject, stringfileName)"
+
+.PP
+Attempts to find a given \fBProject_File\fP Entity from theProject's Project_Files EntitySet \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP whose \fBProject_File\fP is to be found
+.br
+\fIfileName\fP The File Name of the file to be found
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon found, false upon not found
+.RE
+.PP
+
+.PP
+Definition at line 232 of file KChangeDataContext\&.cs\&.
+.SS "\fBProject_Change\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetChangeById (inttheID)"
+
+.PP
+Attempts to Obtain a \fBProject_Change\fP Entity based on the ID value \fBParameters:\fP
+.RS 4
+\fItheID\fP the ID of \fBProject_Change\fP to be found
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBProject_Change\fP entity upon success, null upon failure
+.RE
+.PP
+
+.PP
+Definition at line 282 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBProject_Change\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetChangesByProject (\fBProject\fPtheProject)"
+
+.PP
+Attempts to return a List of \fBProject_Change\fP Entities of a \fBProject\fP Entity \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP Entity whose Project_Changes are to be returned
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of \fBProject\fP Change Entities
+.RE
+.PP
+
+.PP
+Definition at line 272 of file KChangeDataContext\&.cs\&.
+.SS "\fBChange_Type\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetChangeTypeByDescription (stringdescription)"
+
+.PP
+Attempts to obtain a \fBChange_Type\fP Entity from the Change_Types EntitySet based on the description \fBParameters:\fP
+.RS 4
+\fIdescription\fP The description based on which the \fBChange_Type\fP is to be found
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBChange_Type\fP Entity upon success, null upon failure
+.RE
+.PP
+
+.PP
+Definition at line 378 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBChange_Type\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetChangeTypes ()"
+
+.PP
+Creates a List of \fBChange_Type\fP Entities from the Change_Types EntitySet \fBReturns:\fP
+.RS 4
+List of \fBChange_Type\fP Entities\&. Warning, List can be empty
+.RE
+.PP
+
+.PP
+Definition at line 359 of file KChangeDataContext\&.cs\&.
+.SS "List<string> KChangeLogger\&.KChangeDataContextDataContext\&.GetChangeTypesDescriptions ()"
+
+.PP
+Creates a List of strings containing all Change_Types Entities' Description member \fBReturns:\fP
+.RS 4
+List of strings containing Description of each \fBChange_Type\fP Entity\&. Warning, list can be empty!
+.RE
+.PP
+
+.PP
+Definition at line 368 of file KChangeDataContext\&.cs\&.
+.SS "\fBProject_File\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetFileByName (\fBProject\fPtheProject, stringfileName)"
+
+.PP
+Gets a reference to a \fBProject\fP File Entity of a given \fBProject\fP entity based on fileName \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP Entity whose \fBProject\fP File is to be returned
+.br
+\fIfileName\fP Name of the \fBProject\fP file to be returned
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 173 of file KChangeDataContext\&.cs\&.
+.SS "List<string> KChangeLogger\&.KChangeDataContextDataContext\&.GetFileNamesByProject (\fBProject\fPtheProject)"
+
+.PP
+Obtains a List of all File Names attached to a given \fBProject\fP Entity\&. \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP Entity whose File Names are to be returned
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 147 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBProject_File\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetFilesByProject (stringprojectName)"
+
+.PP
+Obtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by string projectName \fBParameters:\fP
+.RS 4
+\fIprojectName\fP string by which the project is to be found
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+(Empty) list of files per project name
+.RE
+.PP
+
+.PP
+Definition at line 102 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBProject_File\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetFilesByProject (intprojectID)"
+
+.PP
+Obtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by int projectID \fBParameters:\fP
+.RS 4
+\fIprojectID\fP int by which the project entity is to be found
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+(Empty) list of files per project name
+.RE
+.PP
+
+.PP
+Definition at line 117 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBProject_File\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetFilesByProject (\fBProject\fPtheProject)"
+
+.PP
+Obtains a list of \fBProject_File\fP entity attached to a given \fBProject\fP entity found by the \fBProject\fP entity \fBParameters:\fP
+.RS 4
+\fItheProject\fP \fBProject\fP entity whose Files are to be returned
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+(Empty) list of files per project name
+.RE
+.PP
+
+.PP
+Definition at line 132 of file KChangeDataContext\&.cs\&.
+.SS "\fBLanguage\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetLanguage (stringlangDescription)"
+
+.PP
+Gets a given \fBLanguage\fP Entity based on its Description \fBParameters:\fP
+.RS 4
+\fIlangDescription\fP Description of the Entity \fBLanguage\fP
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLanguage\fP Entity upon success, null upon failure
+.RE
+.PP
+
+.PP
+Definition at line 327 of file KChangeDataContext\&.cs\&.
+.SS "List<string> KChangeLogger\&.KChangeDataContextDataContext\&.GetLanguageDescriptions ()"
+
+.PP
+Create a List of Strings based on the \fBLanguage\fP EntitySet's Description member \fBReturns:\fP
+.RS 4
+A List of strings containing all \fBLanguage\fP Entity's Description values\&. Warning, List can also be empty\&.
+.RE
+.PP
+
+.PP
+Definition at line 345 of file KChangeDataContext\&.cs\&.
+.SS "DateTime KChangeLogger\&.KChangeDataContextDataContext\&.GetLastChange (\fBProject\fPtheProject)"
+
+.PP
+Obtains the datetime assigned to the last change of a given \fBProject\fP Entity \fBParameters:\fP
+.RS 4
+\fItheProject\fP The given \fBProject\fP entity whose last change is to be returned
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The current time, -30 years if there has not been a change yet The last change from the Database if a change has been registered\&. 
+.RE
+.PP
+
+.PP
+Definition at line 252 of file KChangeDataContext\&.cs\&.
+.SS "List<\fBLog_Type\fP> KChangeLogger\&.KChangeDataContextDataContext\&.GetLogTypes ()"
+
+.PP
+Creates a List of \fBLog_Type\fP from the Log_Types EntitySet \fBReturns:\fP
+.RS 4
+A List of \fBLog_Type\fP\&. WARNING, list can be empty
+.RE
+.PP
+
+.PP
+Definition at line 421 of file KChangeDataContext\&.cs\&.
+.SS "List<string> KChangeLogger\&.KChangeDataContextDataContext\&.GetLogTypesDescriptions ()"
+
+.PP
+Creates a List of string containing each \fBLog_Type\fP's Description \fBReturns:\fP
+.RS 4
+A list of string\&. WARNING, can be empty!
+.RE
+.PP
+
+.PP
+Definition at line 430 of file KChangeDataContext\&.cs\&.
+.SS "int KChangeLogger\&.KChangeDataContextDataContext\&.GetNumberOfFilesByProject (\fBProject\fPtheProject)"
+
+.PP
+Returns the number of Project_Files of a given \fBProject\fP \fBParameters:\fP
+.RS 4
+\fItheProject\fP The \fBProject\fP Entity
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of files
+.RE
+.PP
+
+.PP
+Definition at line 163 of file KChangeDataContext\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetProject (stringprojectName)"
+
+.PP
+Function used to obtain a \fBProject\fP entity based on the name \fBParameters:\fP
+.RS 4
+\fIprojectName\fP The name of the project to be retreived
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+null if not found, \fBProject\fP Entity if found
+.RE
+.PP
+
+.PP
+Definition at line 20 of file KChangeDataContext\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.KChangeDataContextDataContext\&.GetProject (intprojectID)"
+
+.PP
+Function used to obtain a \fBProject\fP entity based on the ID \fBParameters:\fP
+.RS 4
+\fIprojectID\fP The id of the project to be retreived
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+null if not found, \fBProject\fP Entity if found
+.RE
+.PP
+
+.PP
+Definition at line 39 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.InsertChange (\fBProject_Change\fPtheChange)"
+
+.PP
+Attempts to insert a given \fBProject_Change\fP Entity into Project_Changes EntitySet \fBParameters:\fP
+.RS 4
+\fItheChange\fP The \fBProject_Change\fP Entity to be inserted
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBProject_Change\fP entity upon success, null upon failure
+.RE
+.PP
+
+.PP
+Definition at line 302 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.RemoveFile (\fBProject_File\fPtheFile)"
+
+.PP
+Attemps to remove a \fBProject_File\fP entity from the Project_Files EntitySet \fBParameters:\fP
+.RS 4
+\fItheFile\fP The \fBProject_File\fP Entity to be removed
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon success, false upon failure
+.RE
+.PP
+
+.PP
+Definition at line 193 of file KChangeDataContext\&.cs\&.
+.SS "bool KChangeLogger\&.KChangeDataContextDataContext\&.RemoveProject (\fBProject\fPtheProject)"
+
+.PP
+Attemps to remove a \fBProject\fP Entity from the Projects EntitySet \fBParameters:\fP
+.RS 4
+\fItheProject\fP The \fBProject\fP Entity to be removed
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true upon success, false upon failure
+.RE
+.PP
+
+.PP
+Definition at line 77 of file KChangeDataContext\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

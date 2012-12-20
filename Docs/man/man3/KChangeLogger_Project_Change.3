@@ -1,0 +1,167 @@
+.TH "KChangeLogger.Project_Change" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.Project_Change \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits INotifyPropertyChanging, and INotifyPropertyChanged\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBSendPropertyChanging\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSendPropertyChanged\fP (String propertyName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBProject_ID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBID_Change\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "System\&.Nullable< int > \fBFile_ID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBChangeType\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBChangeDescription\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBChangedBy\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fBChangeDate\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBChange_Type\fP \fBChange_Type\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBProject\fP \fBProject\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBProject_File\fP \fBProject_File\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "PropertyChangingEventHandler \fBPropertyChanging\fP"
+.br
+.ti -1c
+.RI "PropertyChangedEventHandler \fBPropertyChanged\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnLoaded\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnValidate\fP (System\&.Data\&.Linq\&.ChangeAction action)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnProject_IDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnProject_IDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnID_ChangeChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnID_ChangeChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_IDChanging\fP (System\&.Nullable< int > value)"
+.br
+.ti -1c
+.RI "partial void \fBOnFile_IDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeTypeChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeTypeChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeDescriptionChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeDescriptionChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnChangedByChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnChangedByChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeDateChanging\fP (System\&.DateTime value)"
+.br
+.ti -1c
+.RI "partial void \fBOnChangeDateChanged\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_Project_ID\fP"
+.br
+.ti -1c
+.RI "int \fB_ID_Change\fP"
+.br
+.ti -1c
+.RI "System\&.Nullable< int > \fB_File_ID\fP"
+.br
+.ti -1c
+.RI "int \fB_ChangeType\fP"
+.br
+.ti -1c
+.RI "string \fB_ChangeDescription\fP"
+.br
+.ti -1c
+.RI "string \fB_ChangedBy\fP"
+.br
+.ti -1c
+.RI "System\&.DateTime \fB_ChangeDate\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBChange_Type\fP > \fB_Change_Type\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBProject\fP > \fB_Project\fP"
+.br
+.ti -1c
+.RI "EntityRef< \fBProject_File\fP > \fB_Project_File\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static PropertyChangingEventArgs \fBemptyChangingEventArgs\fP = new PropertyChangingEventArgs(String\&.Empty)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 651 of file KChangeDataContext\&.designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

@@ -1,0 +1,101 @@
+.TH "KChangeLogger.Language" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.Language \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits INotifyPropertyChanging, and INotifyPropertyChanged\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBSendPropertyChanging\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSendPropertyChanged\fP (String propertyName)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBID\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBDescription\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject\fP > \fBProjects\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "PropertyChangingEventHandler \fBPropertyChanging\fP"
+.br
+.ti -1c
+.RI "PropertyChangedEventHandler \fBPropertyChanged\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "partial void \fBOnLoaded\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnValidate\fP (System\&.Data\&.Linq\&.ChangeAction action)"
+.br
+.ti -1c
+.RI "partial void \fBOnCreated\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanging\fP (int value)"
+.br
+.ti -1c
+.RI "partial void \fBOnIDChanged\fP ()"
+.br
+.ti -1c
+.RI "partial void \fBOnDescriptionChanging\fP (string value)"
+.br
+.ti -1c
+.RI "partial void \fBOnDescriptionChanged\fP ()"
+.br
+.ti -1c
+.RI "void \fBattach_Projects\fP (\fBProject\fP entity)"
+.br
+.ti -1c
+.RI "void \fBdetach_Projects\fP (\fBProject\fP entity)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_ID\fP"
+.br
+.ti -1c
+.RI "string \fB_Description\fP"
+.br
+.ti -1c
+.RI "EntitySet< \fBProject\fP > \fB_Projects\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static PropertyChangingEventArgs \fBemptyChangingEventArgs\fP = new PropertyChangingEventArgs(String\&.Empty)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 423 of file KChangeDataContext\&.designer\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.

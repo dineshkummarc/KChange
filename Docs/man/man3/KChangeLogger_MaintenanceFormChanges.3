@@ -1,0 +1,200 @@
+.TH "KChangeLogger.MaintenanceFormChanges" 3 "Wed Dec 19 2012" "Version 0.6" "KChangeLogger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KChangeLogger.MaintenanceFormChanges \- 
+.PP
+The Main Form containing changes information of a given \fBProject\fP Entity  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKChangeLogger\&.BaseClasses\&.BaseContextForm\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMaintenanceFormChanges\fP (int projectID)"
+.br
+.RI "\fICalls LoadGridView and assigns myProject value \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "\fIClean up any resources being used\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbutton1_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIExit Button event handler\&. Closes the form\&. \fP"
+.ti -1c
+.RI "void \fBLoadGridView\fP ()"
+.br
+.RI "\fIPopulates ChangesGV \fP"
+.ti -1c
+.RI "void \fBChangesGV_CellContentClick\fP (object sender, DataGridViewCellEventArgs e)"
+.br
+.ti -1c
+.RI "void \fBChangesGV_CellDoubleClick\fP (object sender, DataGridViewCellEventArgs e)"
+.br
+.RI "\fIResponsible for viewing the detail of a given Change Line from the ChangesGV Control Creates a new \fBMaintenanceFormChangesDetail\fP Instance \fP"
+.ti -1c
+.RI "void \fBButtonExportTXT_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIExportTXT Event Handler\&. Shows the user a SaveFileDialog and calls Utilities\&.KTextWriter\&.WriteTXT\&. \fP"
+.ti -1c
+.RI "void \fBButtonExportCSV_Click\fP (object sender, EventArgs e)"
+.br
+.RI "\fIExportCSV Event Handler\&. Shows the User a SaveFileDialog and calls Utilities\&.KTextWriter\&.WriteCSV \fP"
+.ti -1c
+.RI "void \fBInitializeComponent\fP ()"
+.br
+.RI "\fIRequired method for Designer support - do not modify the contents of this method with the code editor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBProject\fP \fBmyProject\fP"
+.br
+.RI "\fIThe \fBProject\fP Entity whose Changes are to be displayed \fP"
+.ti -1c
+.RI "System\&.ComponentModel\&.IContainer \fBcomponents\fP = null"
+.br
+.RI "\fIRequired designer variable\&. \fP"
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.DataGridView \fBChangesGV\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBbutton1\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonExportCSV\fP"
+.br
+.ti -1c
+.RI "System\&.Windows\&.Forms\&.Button \fBButtonExportTXT\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+The Main Form containing changes information of a given \fBProject\fP Entity 
+
+
+.PP
+Definition at line 15 of file MaintenanceFormChanges\&.cs\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KChangeLogger\&.MaintenanceFormChanges\&.MaintenanceFormChanges (intprojectID)"
+
+.PP
+Calls LoadGridView and assigns myProject value \fBParameters:\fP
+.RS 4
+\fIprojectID\fP The \fBProject\fP ID to be assigned for myProject
+.RE
+.PP
+
+.PP
+Definition at line 26 of file MaintenanceFormChanges\&.cs\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.button1_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+Exit Button event handler\&. Closes the form\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file MaintenanceFormChanges\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.ButtonExportCSV_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+ExportCSV Event Handler\&. Shows the User a SaveFileDialog and calls Utilities\&.KTextWriter\&.WriteCSV \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file MaintenanceFormChanges\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.ButtonExportTXT_Click (objectsender, EventArgse)\fC [private]\fP"
+
+.PP
+ExportTXT Event Handler\&. Shows the user a SaveFileDialog and calls Utilities\&.KTextWriter\&.WriteTXT\&. \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file MaintenanceFormChanges\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.ChangesGV_CellDoubleClick (objectsender, DataGridViewCellEventArgse)\fC [private]\fP"
+
+.PP
+Responsible for viewing the detail of a given Change Line from the ChangesGV Control Creates a new \fBMaintenanceFormChangesDetail\fP Instance \fBParameters:\fP
+.RS 4
+\fIsender\fP 
+.br
+\fIe\fP 
+.RE
+.PP
+
+.PP
+Definition at line 86 of file MaintenanceFormChanges\&.cs\&.
+.SS "override void KChangeLogger\&.MaintenanceFormChanges\&.Dispose (booldisposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. \fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.PP
+Definition at line 14 of file MaintenanceFormChanges\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.InitializeComponent ()\fC [private]\fP"
+
+.PP
+Required method for Designer support - do not modify the contents of this method with the code editor\&. 
+.PP
+Definition at line 29 of file MaintenanceFormChanges\&.Designer\&.cs\&.
+.SS "void KChangeLogger\&.MaintenanceFormChanges\&.LoadGridView ()\fC [private]\fP"
+
+.PP
+Populates ChangesGV 
+.PP
+Definition at line 46 of file MaintenanceFormChanges\&.cs\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "System\&.ComponentModel\&.IContainer KChangeLogger\&.MaintenanceFormChanges\&.components = null\fC [private]\fP"
+
+.PP
+Required designer variable\&. 
+.PP
+Definition at line 8 of file MaintenanceFormChanges\&.Designer\&.cs\&.
+.SS "\fBProject\fP KChangeLogger\&.MaintenanceFormChanges\&.myProject\fC [private]\fP"
+
+.PP
+The \fBProject\fP Entity whose Changes are to be displayed 
+.PP
+Definition at line 20 of file MaintenanceFormChanges\&.cs\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for KChangeLogger from the source code\&.
