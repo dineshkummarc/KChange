@@ -67,7 +67,7 @@ namespace KChangeLogger
             //TODO: Add logging, Removed File.. etc..
 
             Project_File selectedFile = Data.GetFileByName(myProject, (string) filesListBox.SelectedValue);
-            DialogResult dr = MessageBox.Show("Are you sure you want to delete the file " + selectedFile.File_Name + "?", "Are you sure?", MessageBoxButtons.OKCancel);
+            DialogResult dr = MessageBox.Show("Are you sure you want to delete the file " + selectedFile.File_Name + "?", "KChange: Are you sure?", MessageBoxButtons.OKCancel);
 
             if (dr == System.Windows.Forms.DialogResult.Cancel)
                 return;

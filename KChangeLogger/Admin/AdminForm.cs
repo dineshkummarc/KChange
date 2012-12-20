@@ -99,10 +99,13 @@ namespace KChangeLogger.Admin
                 return;
             }
 
+            if (Data.RemoveChangeType(newCT))
+                MessageBox.Show("Delete successful!", "KChange: Success");
+            else
+                MessageBox.Show("Delete failed!", "KChange: Error");
 
+            BindData();
 
-
-            
         }
     }
 

@@ -110,13 +110,13 @@ namespace KChangeLogger
             fd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             if (fd.ShowDialog() == DialogResult.Cancel)
             {
-                MessageBox.Show("Cancelled.");
+                MessageBox.Show("Cancelled.", "KChange");
                 return;
             }
             if (Utilities.KTextWriter.WriteTXT(fd.InitialDirectory, fd.FileName, myProject, true))
-                MessageBox.Show("Export successful.");
+                MessageBox.Show("Export successful.", "KChange: Success");
             else
-                MessageBox.Show("Export failed.");
+                MessageBox.Show("Export failed.", "KChange: Error");
 
              
         }
@@ -134,13 +134,13 @@ namespace KChangeLogger
             fd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             if (fd.ShowDialog() == DialogResult.Cancel)
             {
-                MessageBox.Show("Cancelled.");
+                MessageBox.Show("Cancelled.", "KChange");
                 return;
             }
             if (Utilities.KTextWriter.WriteCSV(fd.InitialDirectory, fd.FileName, myProject, true))
-                MessageBox.Show("Export successful.");
+                MessageBox.Show("Export successful.", "KChange: Success");
             else
-                MessageBox.Show("Export failed.");
+                MessageBox.Show("Export failed.", "KChange: Error");
 
         }
     }
