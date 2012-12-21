@@ -1,1 +1,17 @@
-A simple Utility to keep track of changes
+KChange
+
+A utility used for keeping track of changes. 
+
+The program allows you to create an unlimited number of projects to which you can be logging changes.
+
+It allows you to add files related to the project and indicate changes on specific files.
+
+Also allows you to generate a ChangeLog file - (.TXT, .CSV)
+
+Future plans:
+
+Add possibility for the user to use a remote database, for collaboration.
+
+Clean-up some undocumented code
+
+Add exception handling
